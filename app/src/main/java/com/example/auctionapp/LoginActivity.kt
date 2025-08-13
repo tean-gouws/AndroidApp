@@ -49,7 +49,10 @@ class LoginActivity : AppCompatActivity() {
                                 finish()
                             }
                         }
-                        SignInState.SMS_MFA, SignInState.SOFTWARE_TOKEN_MFA -> {
+                        // SOFTWARE_TOKEN_MFA is not available in the version of the AWS SDK we are
+                        // using. Handling SMS_MFA here covers MFA challenges without referencing the
+                        // missing enum value and allows the project to compile.
+                        SignInState.SMS_MFA -> {
                             if (mfaCode.isNotEmpty()) {
                                 AWSMobileClient.getInstance().confirmSignIn(mfaCode, object : Callback<SignInResult> {
                                     override fun onResult(confirmResult: SignInResult) {
