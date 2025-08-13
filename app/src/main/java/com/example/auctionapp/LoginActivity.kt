@@ -2,8 +2,8 @@ package com.example.auctionapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.amazonaws.mobile.client.AWSMobileClient
@@ -29,10 +29,10 @@ class LoginActivity : AppCompatActivity() {
             }
         })
 
-        val usernameInput = findViewById<EditText>(R.id.username_input)
-        val passwordInput = findViewById<EditText>(R.id.password_input)
-        val mfaInput = findViewById<EditText>(R.id.mfa_input)
-        val signInButton = findViewById<Button>(R.id.sign_in_button)
+        val usernameInput = findViewById<TextInputEditText>(R.id.username_input)
+        val passwordInput = findViewById<TextInputEditText>(R.id.password_input)
+        val mfaInput = findViewById<TextInputEditText>(R.id.mfa_input)
+        val signInButton = findViewById<MaterialButton>(R.id.sign_in_button)
 
         signInButton.setOnClickListener {
             val username = usernameInput.text.toString()
