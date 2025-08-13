@@ -2,9 +2,10 @@
   "Version": "1.0",
   "CognitoUserPool": {
     "Default": {
-      "PoolId": "YOUR_POOL_ID",
-      "AppClientId": "YOUR_APP_CLIENT_ID",
-      "Region": "YOUR_REGION"
+      "PoolId": "dev-3fun3uh24sa61scj",
+      "AppClientId": "hAsja0DBCf7XuUtRMNk19xFvLF3R8aYu",
+      "AppClientSecret": "vOu07ZkLwXtzcol5SMmF1brUe9KWTksY0VXmFFfpQKdq0bObi-KCWGrSpynuXU5-",
+      "Region": "us"
     }
   }
 }
