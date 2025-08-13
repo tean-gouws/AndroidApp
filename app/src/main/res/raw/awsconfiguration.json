@@ -1,0 +1,10 @@
+{
+  "Version": "1.0",
+  "CognitoUserPool": {
+    "Default": {
+      "PoolId": "YOUR_POOL_ID",
+      "AppClientId": "YOUR_APP_CLIENT_ID",
+      "Region": "YOUR_REGION"
+    }
+  }
+}
